@@ -9,7 +9,10 @@ I also have an error alert incase the API call fails or something else goes wron
 I set the cell's background color based on transaction type, and had reversal be a lighter shade of green because it is still a credit in a way. Debit is red and unknown types are greyed.
 Here's a video of the application when Transactions are fetched without errors and when i alter the url to make the request fail
 
-https://github.com/user-attachments/assets/ff306a11-c6db-414b-96a4-306f5566525a
+https://github.com/user-attachments/assets/8638b8d8-2cb9-4ee4-b43f-b58c748c07bf
 
-https://github.com/user-attachments/assets/3063295d-bf87-4dd2-bad2-04ed8d6d1647
+Uploading Screen Recording 2024-09-15 at 10.50.45.mov…
+
+
+
 
