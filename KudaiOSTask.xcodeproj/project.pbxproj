@@ -13,6 +13,14 @@
 		29E586912C95C9C50033044A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E5868F2C95C9C50033044A /* Main.storyboard */; };
 		29E586932C95C9C60033044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E586922C95C9C60033044A /* Assets.xcassets */; };
 		29E586962C95C9C60033044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E586942C95C9C60033044A /* LaunchScreen.storyboard */; };
+		29E586A02C95CAB10033044A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5869F2C95CAB10033044A /* Transaction.swift */; };
+		29E586A42C95D7240033044A /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586A32C95D7240033044A /* TransactionService.swift */; };
+		29E586A62C95DEC20033044A /* TransactionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586A52C95DEC20033044A /* TransactionServiceImpl.swift */; };
+		29E586AB2C95E1B80033044A /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586AA2C95E1B80033044A /* TransactionListViewModel.swift */; };
+		29E586AD2C95E2060033044A /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586AC2C95E2060033044A /* TransactionListViewController.swift */; };
+		29E586B22C962CCE0033044A /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586B02C962CCE0033044A /* TransactionCell.swift */; };
+		29E586B32C962CCE0033044A /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E586B12C962CCE0033044A /* TransactionCell.xib */; };
+		29E586B62C96CBED0033044A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E586B52C96CBED0033044A /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		29E586922C95C9C60033044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E586952C95C9C60033044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29E586972C95C9C60033044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E5869F2C95CAB10033044A /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		29E586A32C95D7240033044A /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		29E586A52C95DEC20033044A /* TransactionServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionServiceImpl.swift; sourceTree = "<group>"; };
+		29E586AA2C95E1B80033044A /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		29E586AC2C95E2060033044A /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		29E586B02C962CCE0033044A /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		29E586B12C962CCE0033044A /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		29E586B52C96CBED0033044A /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		29E586882C95C9C50033044A /* KudaiOSTask */ = {
 			isa = PBXGroup;
 			children = (
+				29E586A82C95E1360033044A /* Features */,
+				29E586B42C96CBD00033044A /* Network */,
+				29E5869E2C95CA990033044A /* Models */,
 				29E586892C95C9C50033044A /* AppDelegate.swift */,
 				29E5868B2C95C9C50033044A /* SceneDelegate.swift */,
 				29E5868D2C95C9C50033044A /* ViewController.swift */,
@@ -65,6 +84,59 @@
 				29E586972C95C9C60033044A /* Info.plist */,
 			);
 			path = KudaiOSTask;
+			sourceTree = "<group>";
+		};
+		29E5869E2C95CA990033044A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29E5869F2C95CAB10033044A /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29E586A12C95D6E30033044A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				29E586A22C95D7050033044A /* TransactionService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		29E586A22C95D7050033044A /* TransactionService */ = {
+			isa = PBXGroup;
+			children = (
+				29E586A32C95D7240033044A /* TransactionService.swift */,
+				29E586A52C95DEC20033044A /* TransactionServiceImpl.swift */,
+			);
+			path = TransactionService;
+			sourceTree = "<group>";
+		};
+		29E586A82C95E1360033044A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				29E586A92C95E1570033044A /* TransactionFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		29E586A92C95E1570033044A /* TransactionFeature */ = {
+			isa = PBXGroup;
+			children = (
+				29E586AA2C95E1B80033044A /* TransactionListViewModel.swift */,
+				29E586AC2C95E2060033044A /* TransactionListViewController.swift */,
+				29E586B02C962CCE0033044A /* TransactionCell.swift */,
+				29E586B12C962CCE0033044A /* TransactionCell.xib */,
+			);
+			path = TransactionFeature;
+			sourceTree = "<group>";
+		};
+		29E586B42C96CBD00033044A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29E586A12C95D6E30033044A /* Services */,
+				29E586B52C96CBED0033044A /* AppError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +199,7 @@
 			files = (
 				29E586962C95C9C60033044A /* LaunchScreen.storyboard in Resources */,
 				29E586932C95C9C60033044A /* Assets.xcassets in Resources */,
+				29E586B32C962CCE0033044A /* TransactionCell.xib in Resources */,
 				29E586912C95C9C50033044A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +213,14 @@
 			files = (
 				29E5868E2C95C9C50033044A /* ViewController.swift in Sources */,
 				29E5868A2C95C9C50033044A /* AppDelegate.swift in Sources */,
+				29E586B62C96CBED0033044A /* AppError.swift in Sources */,
+				29E586A62C95DEC20033044A /* TransactionServiceImpl.swift in Sources */,
+				29E586A02C95CAB10033044A /* Transaction.swift in Sources */,
+				29E586A42C95D7240033044A /* TransactionService.swift in Sources */,
+				29E586B22C962CCE0033044A /* TransactionCell.swift in Sources */,
+				29E586AB2C95E1B80033044A /* TransactionListViewModel.swift in Sources */,
 				29E5868C2C95C9C50033044A /* SceneDelegate.swift in Sources */,
+				29E586AD2C95E2060033044A /* TransactionListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
